@@ -1,0 +1,23 @@
+{%- assign a = include.artwork -%}
+{%- assign s = site.data.settings -%}
+{%- capture meta -%}{{ a.medium }}{% if a.medium != "" and a.dimensions != "" %} · {% endif %}{{ a.dimensions }}{%- endcapture -%}
+<figure class="work" data-series="{{ a.series }}">
+  <button class="view" type="button"
+    data-src="{{ '/assets/images/artworks/' | append: a.image | relative_url }}"
+    data-title="{{ a.title | escape }}"
+    data-medium="{{ a.medium | escape }}"
+    data-dimensions="{{ a.dimensions | escape }}"
+    data-status="{{ a.status }}"
+    aria-label="View {{ a.title | escape }} larger">
+    <img src="{{ '/assets/images/artworks/' | append: a.image | relative_url }}" alt="{{ a.title | escape }}{% if a.medium != '' %}, {{ a.medium | downcase | escape }}{% endif %}" loading="lazy" decoding="async">
+  </button>
+  <figcaption class="cap">
+    <h3>{{ a.title }}</h3>
+    {%- if meta != "" %}<span class="meta">{{ meta }}</span>{% endif %}
+    {%- if a.status == "sold" %}
+    <span class="tag sold">Sold</span>
+    {%- else %}
+    <a class="tag" href="mailto:{{ s.email }}?subject={{ 'Enquiry: ' | append: a.title | uri_escape }}">Enquire</a>
+    {%- endif %}
+  </figcaption>
+</figure>

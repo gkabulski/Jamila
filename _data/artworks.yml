@@ -1,0 +1,132 @@
+# Each entry is one artwork. Order here is the order on the Work page.
+#   image:     file name in assets/images/artworks/
+#   series:    one of the names in _data/series.yml
+#   status:    available | sold
+#   featured:  true to show on the home page
+- title: Sahara Flow Within
+  image: sahara-flow-within.jpg
+  medium: "Oil, sand, red rock from the Algerian Sahara and lapis lazuli dust on canvas"
+  dimensions: "75 × 50 cm"
+  series: Sahara & Earth
+  status: available
+  featured: true
+
+- title: Desert Vibes
+  image: desert-vibes.jpg
+  medium: "Oil, marble powder and red rock from the Algerian Sahara (Tadrart Rouge) on canvas board"
+  dimensions: "40.6 × 30.5 cm"
+  series: Sahara & Earth
+  status: available
+  featured: true
+
+- title: Defiant Journeys
+  image: defiant-journeys.jpg
+  medium: "Natural mixed media (henna, sand, beeswax, madder powder, turmeric) and collage on canvas stretched on panel"
+  dimensions: "61 × 84 cm"
+  series: Sahara & Earth
+  status: available
+  featured: true
+
+- title: Amazigh Dancers
+  image: amazigh-dancers.jpg
+  medium: "Oil on stretched linen canvas"
+  dimensions: "50 × 60 cm"
+  series: Dance & Body
+  status: available
+  featured: true
+
+- title: Sahara Trace
+  image: sahara-trace.jpg
+  medium: "Red rock from the Sahara, beeswax and gold paint"
+  dimensions: "30 × 21 cm"
+  series: Sahara & Earth
+  status: available
+  featured: true
+
+- title: Untitled
+  image: untitled-oil-and-henna.jpg
+  medium: "Oil and henna on canvas"
+  dimensions: "84 × 88 cm"
+  series: Dance & Body
+  status: sold
+  featured: true
+
+- title: Malika
+  image: malika.jpg
+  medium: "Oil on canvas"
+  dimensions: "40 × 40 cm"
+  series: Portraits
+  status: available
+  featured: true
+
+- title: Stardust, Desert-Worn
+  image: stardust-desert-worn.jpg
+  medium: "Mixed media"
+  dimensions: "40.5 × 30.5 cm"
+  series: Sahara & Earth
+  status: available
+  featured: true
+
+- title: Ghost Within
+  image: ghost-within.jpg
+  medium: "Acrylics on fabric"
+  dimensions: "45.7 × 35.6 cm"
+  series: Portraits
+  status: available
+  featured: true
+
+- title: Transcendence
+  image: transcendence.jpg
+  medium: "Oil and gold leaf on panel"
+  dimensions: "61 × 42 cm"
+  series: Abstract
+  status: available
+  featured: false
+
+- title: Frida
+  image: frida.jpg
+  medium: "Oil on panel"
+  dimensions: "30 × 21 cm"
+  series: Portraits
+  status: available
+  featured: false
+
+- title: Dance Explosion
+  image: dance-explosion.jpg
+  medium: "Watercolours and charcoal on paper"
+  dimensions: "42 × 29.7 cm"
+  series: Dance & Body
+  status: available
+  featured: false
+
+- title: Untitled
+  image: untitled-charcoal-portrait.jpg
+  medium: "Charcoal on paper"
+  dimensions: "42 × 29.7 cm"
+  series: Drawing
+  status: available
+  featured: false
+
+- title: Untitled
+  image: untitled-charcoal-elder.jpg
+  medium: "Charcoal on paper"
+  dimensions: ""
+  series: Drawing
+  status: available
+  featured: false
+
+- title: Untitled
+  image: untitled-dancer-charcoal.jpg
+  medium: "Charcoal"
+  dimensions: ""
+  series: Drawing
+  status: available
+  featured: false
+
+- title: Untitled
+  image: untitled-portrait.jpg
+  medium: ""
+  dimensions: ""
+  series: Portraits
+  status: available
+  featured: false

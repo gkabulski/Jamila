@@ -1,0 +1,49 @@
+---
+layout: default
+nav: home
+---
+{% assign hero = site.data.artworks | where: "image", "sahara-flow-within.jpg" | first %}
+<section class="container hero">
+  <div>
+    <span class="eyebrow">Visual &amp; performance art · London</span>
+    <h1>Gesture, <em>sand</em> &amp; memory</h1>
+    <p class="lede">London-based artist of Algerian and Italian heritage. Paintings made with oil, henna, beeswax and hand-ground rock from the Algerian Sahara.</p>
+    <div class="btn-row">
+      <a class="btn" href="{{ '/work/' | relative_url }}">View the work</a>
+      <a class="btn ghost" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+    </div>
+  </div>
+  <figure>
+    <img class="torn" src="{{ '/assets/images/artworks/' | append: hero.image | relative_url }}" alt="{{ hero.title }}, swirling blue, rust and turquoise paint" width="800" height="1258" fetchpriority="high">
+    <figcaption><b>{{ hero.title }}</b><br>{{ hero.medium }} · {{ hero.dimensions }}</figcaption>
+  </figure>
+</section>
+
+<section class="band" aria-label="Materials">
+  <div class="container">
+    <small>Materials</small>
+    <ul>{% for m in site.data.materials %}<li>{{ m }}</li>{% endfor %}</ul>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-head">
+    <h2>Selected work</h2>
+    <a class="more" href="{{ '/work/' | relative_url }}">See all {{ site.data.artworks | size }} works →</a>
+  </div>
+  <div class="masonry" data-gallery>
+    {% assign featured = site.data.artworks | where: "featured", true %}
+    {% for a in featured %}{% include artwork.html artwork=a %}{% endfor %}
+  </div>
+</section>
+
+<section class="container split">
+  <img class="torn" src="{{ '/assets/images/about/performance-paper.jpg' | relative_url }}" alt="Jamila mid-performance, dancing barefoot on a paper canvas" loading="lazy">
+  <div class="prose">
+    <blockquote class="pull">“Performance art is central to my practice, where the gesture itself and its transformation into image invite varied emotional responses.”</blockquote>
+    <p>Jamila holds a Certificate in Fine Art from Art Academy London and is a founding member of Hawiyya Dance Company. She has shown at Palazzo Pisani-Revedin during the Venice Biennale, at P21 Gallery and at XYZ Gallery, London.</p>
+    <a class="btn ghost" href="{{ '/about/' | relative_url }}">About Jamila</a>
+  </div>
+</section>
+
+{% include lightbox.html %}

@@ -1,0 +1,27 @@
+---
+layout: default
+title: Work
+nav: work
+description: Paintings, mixed media and drawings by Jamila Boughelaf Guglieri, from Sahara rock and henna works to oil portraits and charcoal.
+---
+<section class="container page-head">
+  <span class="eyebrow">Portfolio</span>
+  <h1>Work</h1>
+  <p>Figurative oils, drawings and mixed media made with natural materials, including hand-collected sand and rock from the Algerian Sahara. Click any piece to see it larger.</p>
+</section>
+
+<section class="container section" style="padding-top:40px">
+  <div class="section-head">
+    <div class="filters" role="group" aria-label="Filter by series">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      {% for s in site.data.series %}<button type="button" data-filter="{{ s }}" aria-pressed="false">{{ s }}</button>
+      {% endfor %}
+    </div>
+  </div>
+  <p class="count" aria-live="polite"><span data-count>{{ site.data.artworks | size }}</span> works</p>
+  <div class="masonry" data-gallery>
+    {% for a in site.data.artworks %}{% include artwork.html artwork=a %}{% endfor %}
+  </div>
+</section>
+
+{% include lightbox.html %}

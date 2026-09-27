@@ -1,0 +1,64 @@
+---
+layout: default
+title: About
+nav: about
+description: About Jamila Boughelaf Guglieri, a London-based artist of Algerian and Italian heritage working across visual art, performance and improvisation.
+---
+<section class="container page-head">
+  <span class="eyebrow">About</span>
+  <h1>Jamila Boughelaf Guglieri</h1>
+  <p>A London-based artist of Algerian and Italian heritage, working across visual and performance art.</p>
+</section>
+
+<section class="container split">
+  <img class="torn" src="{{ '/assets/images/about/performance-paper.jpg' | relative_url }}" alt="Jamila performing barefoot on a paper canvas, arms raised" width="408" height="818">
+  <div class="prose">
+    <p>Jamila Boughelaf is a London-based artist of Algerian and Italian heritage whose multidisciplinary practice spans visual art, performance, and improvisation. Her work explores identity, social justice and ancestral memory, drawing on personal history and embodied experience as sources of inquiry.</p>
+    <p>Working primarily with oils and mixed media, Boughelaf creates figurative works that carry a child-like sensibility, reflecting emotional vulnerability and the complexity of human connection. Alongside painting and drawing, she incorporates improvisational processes and mixed media, often using natural materials such as henna, beeswax, and sand to deepen the cultural and tactile resonance of her work.</p>
+    <p>She also experiments with materials sourced from specific geographic origins. Hand-collected Sahara sand and rock, irreproducible and unique, are integrated through a handcrafted process of selection, grinding, and layering. Through this process, the work becomes a dialogue between human memory and geological memory.</p>
+  </div>
+</section>
+
+<section class="statement-band">
+  <div class="container">
+    <blockquote>In my figurative work I draw on memory, fleeting moments, and themes that are dear to me, celebrating a child-like sensibility that resists being silenced or forgotten.<cite>Jamila Boughelaf Guglieri</cite></blockquote>
+  </div>
+</section>
+
+<section class="container split reverse">
+  <img src="{{ '/assets/images/about/performance-stage.jpg' | relative_url }}" alt="Jamila performing on a dark stage under a single light" loading="lazy">
+  <div class="prose">
+    <span class="eyebrow">Performance</span>
+    <h2>Between gesture and image</h2>
+    <p>Performance plays a central role in her practice. The act of making, as well as the physical traces it leaves behind, becomes an integral component of the final piece.</p>
+    <p>Boughelaf frequently works with unstretched canvases and textiles, expanding her practice beyond conventional formats into immersive spatial compositions that engage the body and surrounding environment.</p>
+    <p>She is a founding member of Hawiyya Dance Company, an all-women collective using Dabke and contemporary performance to celebrate Palestinian heritage and support young people in decolonising artistic practice.</p>
+  </div>
+</section>
+
+<section class="container">
+  <img class="torn" src="{{ '/assets/images/about/henna-gesture.jpg' | relative_url }}" alt="A sweeping green henna gesture on white paper" loading="lazy" style="width:100%;max-height:380px;object-fit:cover">
+  <p class="prose" style="margin:22px 0 0;font-style:italic;color:var(--ink-soft)">In exploring social justice and empowerment, I use improvisation and performance alongside mixed media and natural materials (henna, beeswax, sand), allowing gesture to evolve into image.</p>
+</section>
+
+<section class="container section">
+  <div class="section-head"><h2>Exhibitions</h2></div>
+  <table class="exhibitions">
+    <tbody>
+      {% for e in site.data.exhibitions %}
+      <tr>
+        <td class="year">{{ e.year }}</td>
+        <td>{% if e.title != "" %}<b>{{ e.title }}</b>, {{ e.venue }}{% else %}<b>{{ e.venue }}</b>{% endif %}</td>
+        <td class="city">{{ e.city }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="container facts" aria-label="Background">
+  <div><h3>Training</h3><p>Certificate in Fine Art, Art Academy London</p></div>
+  <div><h3>Collective</h3><p>Founding member, Hawiyya Dance Company</p></div>
+  <div><h3>Representation</h3><p>{{ site.data.settings.representation.name }}</p></div>
+  <div><h3>Based in</h3><p>{{ site.data.settings.location }}</p></div>
+</section>

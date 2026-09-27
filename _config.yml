@@ -1,0 +1,14 @@
+title: Jamila Boughelaf Guglieri
+description: London-based artist of Algerian and Italian heritage working across painting, mixed media and performance. Oils, henna, beeswax and hand-ground Sahara rock.
+url: "https://gkabulski.github.io"
+baseurl: "/Jamila"
+lang: en-GB
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,45 @@
+---
+layout: default
+title: Contact
+nav: contact
+description: Contact Jamila Boughelaf Guglieri about artworks, commissions, exhibitions and performance.
+---
+{% assign s = site.data.settings %}
+<section class="container page-head">
+  <span class="eyebrow">Contact</span>
+  <h1>Get in touch</h1>
+  <p>For artwork enquiries, commissions, exhibitions or performance, email Jamila directly or send a message on Instagram.</p>
+</section>
+
+<section class="container contact-grid">
+  <div class="contact-list">
+    <div class="contact-item">
+      <span class="label">Email</span>
+      <a class="value" href="mailto:{{ s.email }}" data-copy-source>{{ s.email }}</a>
+      <button class="copy" type="button" data-copy="{{ s.email }}">Copy address</button>
+    </div>
+    <div class="contact-item">
+      <span class="label">Instagram</span>
+      <a class="value" href="https://www.instagram.com/{{ s.instagram }}/" rel="noopener">@{{ s.instagram }}</a>
+      <p>New work, performances and studio process.</p>
+    </div>
+    <div class="contact-item">
+      <span class="label">Representation</span>
+      <span class="value">{{ s.representation.name }}</span>
+      <p><a href="mailto:{{ s.representation.email }}">{{ s.representation.email }}</a></p>
+    </div>
+    <div class="contact-item">
+      <span class="label">Studio</span>
+      <span class="value">{{ s.location }}, UK</span>
+    </div>
+  </div>
+
+  <aside class="note-card">
+    <h2>Buying a work</h2>
+    <ol>
+      <li>Find the piece on the <a href="{{ '/work/' | relative_url }}">Work</a> page and click <b>Enquire</b>. An email opens with the title already filled in.</li>
+      <li>Jamila will reply with the price, availability and delivery options.</li>
+      <li>The Sahara pieces use hand-collected rock and sand, so each one is unique.</li>
+    </ol>
+  </aside>
+</section>
