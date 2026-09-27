@@ -48,7 +48,10 @@ description: About Jamila Boughelaf Guglieri, a London-based artist of Algerian 
       {% for e in site.data.exhibitions %}
       <tr>
         <td class="year">{{ e.year }}</td>
-        <td>{% if e.title != "" %}<b>{{ e.title }}</b>, {{ e.venue }}{% else %}<b>{{ e.venue }}</b>{% endif %}</td>
+        <td>
+          <b>{{ e.title }}</b>, {{ e.venue }}
+          <span class="ex-meta">{{ e.dates }}{% if e.note and e.note != "" %} · {{ e.note }}{% endif %}</span>
+        </td>
         <td class="city">{{ e.city }}</td>
       </tr>
       {% endfor %}

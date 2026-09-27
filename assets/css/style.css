@@ -251,6 +251,7 @@ blockquote.pull { margin: 0 0 24px; font-family: var(--display); font-size: clam
 .exhibitions td.year { width: 6em; font-variant-numeric: tabular-nums; color: var(--rust); font-weight: 600; }
 .exhibitions td.city { text-align: right; color: var(--ink-soft); padding-left: 16px; }
 .exhibitions b { font-family: var(--display); font-weight: 400; font-size: 20px; }
+.exhibitions .ex-meta { display: block; margin-top: 4px; font-size: 14px; color: var(--ink-soft); }
 
 /* ---------- Contact ---------- */
 .contact-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(28px, 6vw, 88px); padding-block: 24px 88px; align-items: start; }

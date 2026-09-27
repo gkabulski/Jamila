@@ -1,16 +1,51 @@
+# Exhibitions, newest first (from Jamila's CV).
+#   dates: shown under the title, e.g. "6–8 March 2026"
+#   note:  optional extra line (curator, "Exhibition and performance", ...)
+- year: 2026
+  dates: "6–8 March 2026"
+  title: Women’s Art Exhibition
+  venue: Candid Gallery, Angel
+  city: London
+  note: ""
 - year: 2025
+  dates: "11–14 September 2025"
+  title: From Kitchen Table to Gallery Wall
+  venue: Civic Action Lab, Kentish Town
+  city: London
+  note: ""
+- year: 2025
+  dates: "7–29 June 2025"
+  title: Enfield Community Art Exhibition
+  venue: Arbeit Gallery & Studios
+  city: London
+  note: ""
+- year: 2025
+  dates: "12–29 March 2025"
   title: Drawing Humans
   venue: XYZ Gallery
   city: London
+  note: ""
 - year: 2024
-  title: The Path
-  venue: Palazzo Pisani-Revedin, during the Venice Biennale
+  dates: "21 September 2024"
+  title: DZ Festival
+  venue: P21 Gallery
+  city: London
+  note: ""
+- year: 2024
+  dates: "3 September – 3 November 2024"
+  title: The Path, during the Venice Biennale
+  venue: Palazzo Pisani-Revedin, San Marco
   city: Venice
+  note: "Curated by Amy Jackson, powered by SHIM Art Network"
 - year: 2024
-  title: ""
+  dates: "20–23 June 2024"
+  title: Art Academy London Graduate Show
+  venue: Art Academy London, Mermaid Court
+  city: London
+  note: ""
+- year: 2022
+  dates: "30 September – 8 October 2022"
+  title: Elle-Djazair, DZ Festival
   venue: P21 Gallery
   city: London
-- year: 2021
-  title: ""
-  venue: P21 Gallery
-  city: London
+  note: "Exhibition and performance"
