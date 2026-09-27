@@ -14,7 +14,7 @@ description: Paintings, mixed media and drawings by Jamila Boughelaf Guglieri, f
   <div class="section-head">
     <div class="filters" role="group" aria-label="Filter by series">
       <button type="button" data-filter="all" aria-pressed="true">All</button>
-      {% for s in site.data.series %}<button type="button" data-filter="{{ s }}" aria-pressed="false">{{ s }}</button>
+      {% for s in site.data.series %}<button type="button" data-filter="{{ s | escape }}" aria-pressed="false">{{ s }}</button>
       {% endfor %}
     </div>
   </div>

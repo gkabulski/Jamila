@@ -9,7 +9,7 @@
   dimensions: "75 × 50 cm"
   series: Sahara & Earth
   status: available
-  featured: true
+  featured: false  # shown as the home page hero instead
 
 - title: Desert Vibes
   image: desert-vibes.jpg
